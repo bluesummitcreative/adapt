@@ -5,7 +5,8 @@
 <div class="container-fluid container-padding">
 	<div class="container">
 		<div class="row">
-			<?php
+			<div id="accordion">
+ <?php
 /**/
 $years = $wpdb->get_col("SELECT DISTINCT YEAR(post_date)
 FROM $wpdb->posts WHERE post_status = 'publish'
@@ -13,7 +14,6 @@ AND post_type = 'post' ORDER BY post_date DESC");
 foreach($years as $year) :
 ?>
  
- <div id="accordion">
   <?    $months = $wpdb->get_col("SELECT DISTINCT MONTH(post_date)
         FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post'
         AND YEAR(post_date) = '".$year."' ORDER BY post_date DESC");
@@ -37,8 +37,8 @@ foreach($years as $year) :
     </div>
   </div>
   <?php endforeach;?>
-</div>
 <?php endforeach; ?>
+</div>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
