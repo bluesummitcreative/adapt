@@ -5,6 +5,7 @@
 <div class="container-fluid container-padding">
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-9 order-sm-2">
 			<div id="accordion">
 	<?php
 
@@ -50,6 +51,7 @@
 
 ?>
 </div>
+				</div>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
