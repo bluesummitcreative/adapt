@@ -33,7 +33,7 @@
 				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 				  <div class="card-body">
 					<ul>
-						<li><?php the_title(); ?></li>
+						<li><?php the_content(); ?></li>
 						<li><?php the_title(); ?></li>
 						<li><?php the_title(); ?></li>
 						<li><?php the_title(); ?></li>
