@@ -5,6 +5,7 @@
 <div class="container-fluid container-padding">
 	<div class="container">
 		<div class="row">
+			<ul>
 			<?php
 global $wpdb;
 $limit = 0;
@@ -26,6 +27,7 @@ foreach($months as $month) :
 if(++$limit >= 18) { break; }
  
 endforeach; ?>
+			</ul>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
