@@ -26,15 +26,15 @@
 	// The Loop
 	if ( $query->have_posts() ) { while ( $query->have_posts() ) { $query->the_post(); $c++; ?>
 			<div class="card">
-				<div class="card-header" id="headingOne">
-				  <h5 class="mb-0">
-					<button class="btn btn-link<?php if(! $c == 1 ) echo ' collapsed'; ?>" data-toggle="collapse" data-target="#collapseOne"<?php if( $c == 1 ) echo ' aria-expanded="true"'; ?>aria-controls="collapseOne">
+				<div class="card-header" id="heading<?php echo $c; ?>"
+				  <h5>
+					<button class="btn btn-link<?php if(! $c == 1 ) echo ' collapsed'; ?>" data-toggle="collapse" data-target="#collapse<?php echo $c;?>" aria-expanded="<?php if( $c == 1 ) echo 'true'; if(! $c == 1 ) echo 'false'; ?>" aria-controls="collapse<?php echo $c;?>">
 					  <?php the_title(); ?>
 					</button>
 				  </h5>
 				</div>
 
-				<div id="collapseOne" class="collapse<?php if( $c == 1 ) echo ' show'; ?>" aria-labelledby="headingOne" data-parent="#accordion">
+				<div id="collapseOne" class="collapse<?php if( $c == 1 ) echo ' show'; ?>" aria-labelledby="heading<?php echo $c; ?>ccordion">
 				  <div class="card-body">
 					<?php the_content(); ?>
 				  </div>
