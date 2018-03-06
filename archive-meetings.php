@@ -28,7 +28,7 @@
 			<div class="card">
 				<div class="card-header" id="headingOne">
 				  <h5 class="mb-0">
-					<button class="btn btn-link<?php if( $c == 1 ) echo ' collapsed'; ?>" data-toggle="collapse" data-target="#collapseOne"<?php if( $c == 1 ) echo ' aria-expanded="true"'; ?>aria-controls="collapseOne">
+					<button class="btn btn-link<?php if(! $c == 1 ) echo ' collapsed'; ?>" data-toggle="collapse" data-target="#collapseOne"<?php if( $c == 1 ) echo ' aria-expanded="true"'; ?>aria-controls="collapseOne">
 					  <?php the_title(); ?>
 					</button>
 				  </h5>
