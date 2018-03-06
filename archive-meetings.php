@@ -6,29 +6,33 @@
 	<div class="container">
 		<div class="row">
 		<?php
-			 if (have_posts()) : while (have_posts()) : the_post(); ?>
+/**/
+$years = $wpdb->get_col("SELECT DISTINCT YEAR(post_date)
+FROM $wpdb->posts WHERE post_status = 'publish'
+AND post_type = 'post' ORDER BY post_date DESC");
+foreach($years as $year) :
+?>
+<li><a href="JavaScript:void()"><?php echo $year; ?></a>
 
-			<?php
-			 // Assign the year to a variable
-			 $year = the_date('Y', '', '', FALSE);
+    <ul class="archive-sub-menu">
+        <?    $months = $wpdb->get_col("SELECT DISTINCT MONTH(post_date)
+        FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post'
+        AND YEAR(post_date) = '".$year."' ORDER BY post_date DESC");
+        foreach($months as $month) :
+        ?>
+            <li><a href="<?php echo get_month_link($year, $month); ?>">
 
-			 // If your year hasn't been echoed earlier in the loop, echo it now
-			 if ($year !== $year_check) {
-			 echo "<h2 class='year'>" . $year . "</h2>";
-			 }
+                <?php echo date( 'F', mktime(0, 0, 0, $month) );?></a>
 
-			 // Now that your year has been printed, assign it to the $year_check variable
-			 $year_check = $year;
-			?>
+            </li>
 
-			<div id="post-<?php the_ID(); ?>">
-			<!-- post content etc goes here  -->
-			</div><!-- end .post-wrap -->
-			<?php endwhile; ?>
-			<!-- previous next nav -->
-			<?php else : ?>
-			<!-- posts not found info -->
-			<?php endif; ?>
+        <?php endforeach;?>
+
+    </ul>
+
+</li>
+
+<?php endforeach; ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
