@@ -34,7 +34,7 @@
 				  </h5>
 				</div>
 
-				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div id="collapseOne" class="collapse<?php if( $c == 1 ) echo ' show'; ?>" aria-labelledby="headingOne" data-parent="#accordion">
 				  <div class="card-body">
 					<?php the_content(); ?>
 				  </div>
