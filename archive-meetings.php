@@ -20,13 +20,15 @@
 
 	// The Query
 	$query = new WP_Query( $args );
+				
+	$c = 0;
 
 	// The Loop
-	if ( $query->have_posts() ) { while ( $query->have_posts() ) { $query->the_post(); ?>
+	if ( $query->have_posts() ) { while ( $query->have_posts() ) { $query->the_post(); $c++; ?>
 			<div class="card">
 				<div class="card-header" id="headingOne">
 				  <h5 class="mb-0">
-					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"<?php if( $c == 1 ) echo ' aria-expanded="true"'; ?>aria-controls="collapseOne">
 					  <?php the_title(); ?>
 					</button>
 				  </h5>
