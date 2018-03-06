@@ -14,6 +14,7 @@
 		'post_status'            => array( 'publish' ),
 		'order'                  => 'DESC',
 		'orderby'                => 'date',
+		'posts_per_page'		 => -1,
 	);
 
 	// The Query
