@@ -5,40 +5,27 @@
 <div class="container-fluid container-padding">
 	<div class="container">
 		<div class="row">
-			<div id="accordion">
- <?php
-/**/
-$years = $wpdb->get_col("SELECT DISTINCT YEAR(post_date)
-FROM $wpdb->posts WHERE post_status = 'publish'
-AND post_type = 'post' ORDER BY post_date DESC");
-foreach($years as $year) :
-?>
+			<?php
+global $wpdb;
+$limit = 0;
+$year_prev = null;
+$months = $wpdb->get_results("SELECT DISTINCT MONTH( post_date ) AS month ,  YEAR( post_date ) AS year, COUNT( id ) as post_count FROM $wpdb->posts WHERE post_status = 'publish' and post_date <= now( ) and post_type = 'post' GROUP BY month , year ORDER BY post_date DESC");
+foreach($months as $month) :
+    $year_current = $month->year;
+    if ($year_current != $year_prev){
+        if ($year_prev != null){?>
+         
+        <?php } ?>
+     
+    <li class="archive-year"><a href="<?php bloginfo('url') ?>/<?php echo $month->year; ?>/"><?php echo $month->year; ?></a></li>
+     
+    <?php } ?>
+    <li><a href="<?php bloginfo('url') ?>/<?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>"><span class="archive-month"><?php echo date_i18n("F", mktime(0, 0, 0, $month->month, 1, $month->year)) ?></span></a></li>
+<?php $year_prev = $year_current;
  
-  <?    $months = $wpdb->get_col("SELECT DISTINCT MONTH(post_date)
-        FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post'
-        AND YEAR(post_date) = '".$year."' ORDER BY post_date DESC");
-        foreach($months as $month) :
-        ?>
-   <div class="card">
-    <div class="card-header">
-      <h5>
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <?php echo $year; ?>
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-       <a href="<?php echo get_month_link($year, $month); ?>">
-       <?php echo date( 'F', mktime(0, 0, 0, $month) );?></a>
-       
-      </div>
-    </div>
-  </div>
-  <?php endforeach;?>
-<?php endforeach; ?>
-</div>
+if(++$limit >= 18) { break; }
+ 
+endforeach; ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
