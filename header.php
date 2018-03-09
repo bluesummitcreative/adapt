@@ -1,11 +1,10 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
-        <!--<link rel="stylesheet" href="https://use.typekit.net/ixn7uxa.css">-->
 	</head>
 	<body <?php body_class(); ?>>
 	
