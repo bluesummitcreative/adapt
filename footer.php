@@ -57,8 +57,5 @@
 </footer>
 
 	<?php wp_footer(); ?>
-<script>
-	jQuery('.collapse').collapse()
-</script>
 	</body>
 </html>
