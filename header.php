@@ -38,6 +38,7 @@
 					  'container'       => 'div',
 					  'container_class' => 'collapse navbar-collapse',
 					  'container_id'    => 'navbarSupportedContent',
+					  'menu'            => 'Header Menu',
 					  'menu_class'      => 'navbar-nav ml-auto',
 					  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					  'depth'           => 0,
