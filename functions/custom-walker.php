@@ -1,7 +1,7 @@
 <?php
 	class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
     
-    function start_lvl( &$output, $depth ){ // ul
+    function start_lvl( &$output, $depth = 0 ){ // ul
         $indent = str_repeat("\t",$depth); // indents the outputted HTML
         $submenu = ($depth > 0) ? ' sub-menu' : '';
         $output .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
