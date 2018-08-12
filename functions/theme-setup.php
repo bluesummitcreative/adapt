@@ -61,6 +61,19 @@
 		
 	}
 
+	remove_action('wp_head', 'rsd_link');
+	remove_action('wp_head', 'wlwmanifest_link');
+	remove_action('wp_head', 'wp_generator');
+	remove_action('wp_head', 'start_post_rel_link');
+	remove_action('wp_head', 'index_rel_link');
+	remove_action('wp_head', 'adjacent_posts_rel_link');
+
+	function remove_revslider_meta_tag() {
+		return '';
+	}
+	add_filter( 'revslider_meta_generator', 'remove_revslider_meta_tag' );
+
+
 //Remove H1 from WP Editor
 function remove_h1_from_editor( $settings ) {
     $settings['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;';
