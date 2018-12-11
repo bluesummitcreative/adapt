@@ -16,11 +16,11 @@
 					
 						<div class="row">
 					
-						<div class="footer-socials">
+						<!--<div class="footer-socials">
 							<a href="https://www.facebook.com/ADAPTCenter/" target="_blank"><i class="fa fa-facebook-square"></i> ADAPTCenter</a>
 							<a href="https://twitter.com/ADAPTColorado" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> @ADAPTColorado</a>
 							<a href="https://www.linkedin.com/company/adapt---alliance-for-the-development-of-additive-processing-technologies/?trk=biz-companies-cym" target="_blank"><i class="fa fa-linkedin-square"></i> ADAPTColorado</a>
-						</div>
+						</div>-->
 							
 					</div>	
 				</div>
@@ -35,7 +35,7 @@
 			</div>
 			
 			<div class="col-sm-3 col-md-2">
-				<a button="" class="btn btn-2 btn-2d" href="/account">MEMBER CONTENT</a>	
+				<a button="" class="btn btn-2 btn-2d" href="/account/">MEMBER CONTENT</a>	
 			</div>
 			
 		</div>
