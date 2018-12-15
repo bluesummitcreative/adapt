@@ -30,7 +30,7 @@
 			
 			<div class="col-sm-12 col-md-3 footer-contact">
 			303.273.3091<br />
-			<a href="mailto:astebner@mines.edu" target="_blank">astebner@mines.edu</a><br />
+			<a href="mailto:ADAPT@mines.edu" target="_blank">ADAPT@mines.edu</a><br />
 			<a href="http://adapt.mines.edu" target="_blank">adapt.mines.edu</a>
 			</div>
 			
