@@ -15,7 +15,7 @@
 					<div class="col-sm-12">
 						<ul class="list-inline contact-info">
 							<li class="list-inline-item"><a href="#"><i class="fa fa-mobile"></i> (303) 273.3091</a></li>
-							<li class="list-inline-item"><a href="mailto:astebner@mines.edu"><i class="fa fa-envelope"></i> astebner@mines.edu</a></li>
+							<li class="list-inline-item"><a href="mailto:ADAPT@mines.edu"><i class="fa fa-envelope"></i> ADAPT@mines.edu</a></li>
 						</ul>
 					</div>
 				</div>
