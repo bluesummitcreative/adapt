@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-6">
           <h2>Member News</h2>
-		<div class="member-news" style="background:#c1d1e5;padding:30px;">
+		<div class="member-news">
 			<?php
 			// WP_Query arguments
 			$args = array(
@@ -30,8 +30,10 @@
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post(); ?>
+				<div class="news-item" style="background:#c1d1e5;padding:20px;">
 				<h4><?php the_title(); ?></h4>
-				<p><?php the_excerpt(); ?></p>				
+				<p><?php the_excerpt(); ?></p>
+				</div>
 				<?php }
 			} else {
 				// no posts found
