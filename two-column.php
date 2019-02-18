@@ -1,5 +1,5 @@
 <?php
-  /*Template Name: Two Columns*/
+  /*Template Name: Current Members*/
 	get_header();
 	get_template_part('inc/page-header');
 ?>
