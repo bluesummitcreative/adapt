@@ -14,8 +14,10 @@
         <?php endwhile; endif; ?>
         </div>
         <div class="col-md-6">
-          <h2 style="color:#5b78a9;">Member News</h2>
-		NEWS GOES HERE
+          <h2>Member News</h2>
+		<div class="member-news" style="background:#c1d1e5;padding:30px;">
+			NEWS GOES HERE
+		</div>
 		
         </div>
       </div>
