@@ -25,7 +25,6 @@
 				<div class="news-item">
 					<h4><a target="_blank" href="<?php the_field('link'); ?>"><?php the_title(); ?></a></h4>
 				<p><?php the_content(); ?></p>
-				<p><a style="margin-left:0;" target="_blank" href="<?php the_field('link'); ?>" class="btn btn-primary">Read More</a></p>
 				</div>
 				<?php }
 			} else {
