@@ -6,7 +6,7 @@
 <div class="container-fluid container-padding">
 	<div class="container">
 		<div class="row">
-    <div class="col-sm-9 order-sm-2">
+    <div class="col-sm-12">
       <div class="row">
         <div class="col-md-6">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -50,7 +50,7 @@
   </div>
 		<?php
 			
-			get_sidebar();
+			//get_sidebar();
 			?>
 		</div>
 	</div>
