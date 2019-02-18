@@ -13,8 +13,10 @@
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
         </div>
-        <div class="col-md-6">
-          <h4>MEMBER NEWS GOES HERE</h4>
+        <div class="col-md-6" style="background: #7f7f7f; padding: 30px;">
+          <h2 style="color: #fff;">Member News</h2>
+		NEWS GOES HERE
+		
         </div>
       </div>
   </div>
