@@ -29,9 +29,10 @@
 			// The Loop
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
-					$query->the_post();
-					// do something
-				}
+					$query->the_post(); ?>
+				<h4><?php the_title(); ?></h4>
+				<p><?php the_excerpt(); ?></p>				
+				<?php }
 			} else {
 				// no posts found
 			}
