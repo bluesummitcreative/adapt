@@ -30,7 +30,7 @@
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post(); ?>
-				<div class="news-item" style="background:#c1d1e5;padding:20px;">
+				<div class="news-item" style="background:#c1d1e5;padding:20px;margin-bottom:20px;">
 				<h4><?php the_title(); ?></h4>
 				<p><?php the_excerpt(); ?></p>
 				</div>
