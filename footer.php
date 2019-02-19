@@ -47,7 +47,7 @@
 			<div class="container">
 				<div class="row">					
 					<div class="col-sm-12 footer-logo">
-						<a href="/"><img alt="footer logo" src="/wp-content/themes/adapt/images/footer-logo.png" style="float:right; height:48px;"></a>
+						<a href="/"><img alt="footer logo" src="/wp-content/uploads/adapt-logo-full-name.png" style="float:right; height:48px;"></a>
 					</div>
 				</div>
 			</div>
