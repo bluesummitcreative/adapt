@@ -35,12 +35,12 @@
 			?>
         </div>
         <div class="col-md-6">
-          <h2>ADAPT News</h2>
+          <h2>ADAPT in the News</h2>
 		<div class="news">
 			<?php
 			// WP_Query arguments
 			$args = array(
-				'post_type'              => array( '_adapt_news' ),
+				'post_type'              => array( '_adapt_in_the_news' ),
 				'post_status'            => array( 'publish' ),
 			);
 			// The Query
