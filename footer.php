@@ -7,20 +7,20 @@
 									
 				<div class="col-sm-12 col-md-7 footer-links">
 							
-						<a href="/about/">ABOUT</a>
+						<a href="/about/about-adapt">ABOUT</a>
 						<a href="/capabilities">CAPABILITIES</a>
-						<a href="/membership">MEMBERSHIP</a>
-						<a href="/news">NEWS</a>
-						<a href="/events">EVENTS</a>
-					    <a href="/contact/">CONTACT</a>
+						<a href="/membership/benefits">MEMBERSHIP</a>
+						<a href="/news-and-events">NEWS</a>
+					    	<a href="/publications">PUBLICATIONS</a>
 					
 						<div class="row">
 					
-						<!--<div class="footer-socials">
+						<div class="footer-socials">
 							<a href="https://www.facebook.com/ADAPTCenter/" target="_blank"><i class="fa fa-facebook-square"></i> ADAPTCenter</a>
 							<a href="https://twitter.com/ADAPTColorado" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> @ADAPTColorado</a>
 							<a href="https://www.linkedin.com/company/adapt---alliance-for-the-development-of-additive-processing-technologies/?trk=biz-companies-cym" target="_blank"><i class="fa fa-linkedin-square"></i> ADAPTColorado</a>
-						</div>-->
+							<a href="https://www.instagram.com/adaptcolorado/" target="_blank"><i class="fab fa-instagram"></i> adaptcolorado</a>
+						</div>
 							
 					</div>	
 				</div>
@@ -29,7 +29,7 @@
 				
 			
 			<div class="col-sm-12 col-md-3 footer-contact">
-			303.273.3091<br />
+			(303) 273-3091<br />
 			<a href="mailto:ADAPT@mines.edu" target="_blank">ADAPT@mines.edu</a><br />
 			<a href="http://adapt.mines.edu" target="_blank">adapt.mines.edu</a>
 			</div>
