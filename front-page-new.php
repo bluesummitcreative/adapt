@@ -47,7 +47,7 @@
 					<?php
 						// WP_Query arguments
 						$args = array(
-							'post_type'              => array( '_adapt_in_the_news' ),
+							'post_type'              => array( '_adapt_publications' ),
 							'post_status'            => array( 'publish' ),
 							'posts_per_page'         => '3',
 						);
