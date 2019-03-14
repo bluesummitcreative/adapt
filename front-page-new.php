@@ -21,11 +21,11 @@
 			<div class="col-sm-4">
 				<div class="funnel">
 					<?php the_field ('funnel1'); ?>
-					<ul>
+					<ul class="list-unstyled">
 					<?php
 						// WP_Query arguments
 						$args = array(
-							'post_type'              => array( 'posts' ),
+							'post_type'              => array( 'post' ),
 							'post_status'            => array( 'publish' ),
 							'posts_per_page'         => '3',
 						);
@@ -52,11 +52,11 @@
 			<div class="col-sm-4">
 				<div class="funnel">
 					<?php the_field ('funnel2');?>
-					<ul>
+					<ul class="list-unstyled">
 					<?php
 						// WP_Query arguments
 						$args = array(
-							'post_type'              => array( 'posts' ),
+							'post_type'              => array( '_member_news' ),
 							'post_status'            => array( 'publish' ),
 							'posts_per_page'         => '3',
 						);
@@ -85,7 +85,7 @@
 			<div class="col-sm-4">
 				<div class="funnel">
 					<?php the_field ('funnel3');?>
-					<ul>
+					<ul class="list-unstyled">
 					<?php
 						// WP_Query arguments
 						$args = array(
@@ -121,7 +121,7 @@
 			<div class="col-sm-4">
 				<div class="funnel">
 					<?php the_field ('funnel5');?>
-					<ul>
+					<ul class="list-unstyled">
 					<?php
 						// WP_Query arguments
 						$args = array(
