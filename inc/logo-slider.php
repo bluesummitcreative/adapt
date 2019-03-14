@@ -1,4 +1,4 @@
-<div class="container-fluid site-wide-cta">
+<div class="container-fluid container-padding site-wide-cta text-center">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
