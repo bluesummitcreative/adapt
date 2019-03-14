@@ -42,6 +42,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="funnel">
+					<?php the_field ('funnel4');?>
 					<ul>
 					<?php
 						// WP_Query arguments
