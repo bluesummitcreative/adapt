@@ -35,7 +35,7 @@
 			</div>
 			
 			<div class="col-sm-3 col-md-2">
-				<a button="" class="btn btn-2 btn-2d" href="/account/">MEMBER CONTENT</a>	
+				<a button="" class="btn btn-2 btn-2d" href="/subscribe-to-newsletter/">NEWSLETTER SIGN-UP</a>	
 			</div>
 			
 		</div>
