@@ -59,7 +59,7 @@
 						if ( $query->have_posts() ) {
 							while ( $query->have_posts() ) {
 								$query->the_post(); ?>
-						<li><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></li>
+						<li><a href="https://adapt.mines.edu/publications/"><?php echo get_the_excerpt(); ?></a></li>
 							<?php }
 						} else {
 							// no posts found
