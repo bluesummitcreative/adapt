@@ -21,18 +21,96 @@
 			<div class="col-sm-4">
 				<div class="funnel">
 					<?php the_field ('funnel1'); ?>
+					<ul>
+					<?php
+						// WP_Query arguments
+						$args = array(
+							'post_type'              => array( 'posts' ),
+							'post_status'            => array( 'publish' ),
+							'posts_per_page'         => '3',
+						);
+
+						// The Query
+						$query = new WP_Query( $args );
+
+						// The Loop
+						if ( $query->have_posts() ) {
+							while ( $query->have_posts() ) {
+								$query->the_post(); ?>
+						<li><a href="https://adapt.mines.edu/news-and-events/"><?php echo get_the_excerpt(); ?></a></li>
+							<?php }
+						} else {
+							// no posts found
+						}
+
+						// Restore original Post Data
+						wp_reset_postdata();
+					?>
+					</ul>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="funnel">
-					<?php the_field ('funnel2');?>				
+					<?php the_field ('funnel2');?>
+					<ul>
+					<?php
+						// WP_Query arguments
+						$args = array(
+							'post_type'              => array( 'posts' ),
+							'post_status'            => array( 'publish' ),
+							'posts_per_page'         => '3',
+						);
+
+						// The Query
+						$query = new WP_Query( $args );
+
+						// The Loop
+						if ( $query->have_posts() ) {
+							while ( $query->have_posts() ) {
+								$query->the_post(); ?>
+						<li><a href="https://adapt.mines.edu/news-and-events/"><?php echo get_the_excerpt(); ?></a></li>
+							<?php }
+						} else {
+							// no posts found
+						}
+
+						// Restore original Post Data
+						wp_reset_postdata();
+					?>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="funnel">
-					<?php the_field ('funnel3');?>				
+					<?php the_field ('funnel3');?>
+					<ul>
+					<?php
+						// WP_Query arguments
+						$args = array(
+							'post_type'              => array( 'tribe_events' ),
+							'post_status'            => array( 'publish' ),
+							'posts_per_page'         => '3',
+						);
+
+						// The Query
+						$query = new WP_Query( $args );
+
+						// The Loop
+						if ( $query->have_posts() ) {
+							while ( $query->have_posts() ) {
+								$query->the_post(); ?>
+						<li><a href="https://adapt.mines.edu/events/"><?php echo get_the_title(); ?></a></li>
+							<?php }
+						} else {
+							// no posts found
+						}
+
+						// Restore original Post Data
+						wp_reset_postdata();
+					?>
+					</ul>
 				</div>				
 			</div>
 			<div class="col-sm-4">
